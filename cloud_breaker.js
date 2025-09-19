@@ -5,7 +5,7 @@ let context;
 
 let playerWidth = 80;
 let playerHeight = 10;
-let playerVelocityX = 10;
+let playerVelocityX = 15;
 
 let player = {
         x : boardWidth/2 - playerWidth/2,
@@ -86,10 +86,10 @@ function update() {
 	}
 
 	if (topCollision(ball, player) || bottomCollision(ball, player)) {
-		ball.velocityY *= -1;
+		ball.velocityY *= -1.1;
 	}
 	else if (leftCollision(ball, player) || rightCollision(ball, player)) {
-		ball.velocityX *= -1;
+		ball.velocityX *= -1.1;
 	}
 
 	context.fillStyle = "white";
