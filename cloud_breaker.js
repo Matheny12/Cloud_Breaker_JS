@@ -17,8 +17,8 @@ let player = {
 
 let ballWidth = 10;
 let ballHeight = 10;
-let ballVelocityX = 3;
-let ballVelocityY = 2;
+let ballVelocityX = 6;
+let ballVelocityY = 4;
 
 let ball = {
 	x : boardWidth/2,
